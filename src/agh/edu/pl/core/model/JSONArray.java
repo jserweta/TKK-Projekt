@@ -3,16 +3,16 @@ package agh.edu.pl.core.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JSONArray<T extends JSONValue> implements JSONValue {
+public class JSONArray implements JSONValue {
 
-    private List<T> values = new ArrayList<>();
+    private List<JSONValue> values = new ArrayList<>();
     private String name;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void addValue(T value) {
+    public void addValue(JSONValue value) {
         values.add(value);
     }
 

@@ -198,11 +198,11 @@ public class JSONReader {
         return value;
     }
 
-    private JSONArray<JSONValue> readArray(String key) throws Exception {
+    private JSONArray readArray(String key) throws Exception {
 
         readExactly(new char[]{'['});
 
-        JSONArray<JSONValue> array = new JSONArray<>();
+        JSONArray array = new JSONArray();
         array.setName(key);
 
         while ( true ) {
