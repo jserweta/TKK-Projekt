@@ -20,7 +20,7 @@ public class JSONArray<T extends JSONValue> implements JSONValue {
     public String printToXML() {
         String elementName;
         if(name.length() > 2 && name.charAt(name.length()-1) == 's')
-            elementName = name.substring(0, name.length() - 2);
+            elementName = name.substring(0, name.length() - 1);
         else elementName = name + "Element";
 
         StringBuilder xmlString = new StringBuilder();

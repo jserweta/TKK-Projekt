@@ -4,12 +4,12 @@ public class JSONNumber implements JSONValue {
 
     private String value;
 
-    public void setValue(String value) {
+    public JSONNumber(String value) {
         this.value = value;
     }
 
     @Override
     public String printToXML() {
-        return null;
+        return value;
     }
 }
