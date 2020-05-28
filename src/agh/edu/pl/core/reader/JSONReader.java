@@ -254,7 +254,7 @@ public class JSONReader {
     }
 
     private char[] WHITESPACES = {' ', '\t', '\n', '\r'};
-    private char[] END_CHARACTERS = {' ', ',', '}', ']', '\n'};
+    private char[] END_CHARACTERS = {' ', ',', '}', ']', '\r', '\n'};
 
     private boolean isDigit(char c) {
         return c > 47 && c < 58;

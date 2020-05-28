@@ -33,5 +33,6 @@
         "missing_field": "missing_value"
       }]
     }],
-    "Asthma":[{}]
+    "Asthma":[{
+      "missing_field": 2.222   }]
   }]}
