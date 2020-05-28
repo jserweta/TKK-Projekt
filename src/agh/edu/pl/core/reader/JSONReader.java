@@ -36,6 +36,12 @@ public class JSONReader {
         while ( !buf.empty() ) {
             skipWhitespaces();
 
+            if ( buf.peek() == '}') {
+                ++pos;
+                buf.pop();
+                break;
+            }
+
             String key;
             try {
                 key = readKey();
@@ -67,11 +73,6 @@ public class JSONReader {
                 continue;
             }
 
-            if (buf.peek() == '}') {
-                ++pos;
-                buf.pop();
-                break;
-            }
         }
 
         return obj;
@@ -205,7 +206,7 @@ public class JSONReader {
         JSONArray array = new JSONArray();
         array.setName(key);
 
-        while ( true ) {
+        while ( buf.peek() != ']' ) {
             JSONValue value = readValue(key);
             array.addValue(value);
             skipWhitespaces();
@@ -253,7 +254,7 @@ public class JSONReader {
     }
 
     private char[] WHITESPACES = {' ', '\t', '\n', '\r'};
-    private char[] END_CHARACTERS = {' ', ',', '}', ']'};
+    private char[] END_CHARACTERS = {' ', ',', '}', ']', '\n'};
 
     private boolean isDigit(char c) {
         return c > 47 && c < 58;
@@ -279,7 +280,7 @@ public class JSONReader {
         for ( char c: charactersToRead) {
             ++pos;
             if(buf.pop() != c)
-                throw new InvalidCharacterSequence(pos, "Wrong characters sequence. Extected: " + Arrays.toString(charactersToRead));
+                throw new InvalidCharacterSequence(pos, "Wrong characters sequence. Expected: " + Arrays.toString(charactersToRead));
         }
     }
 }
