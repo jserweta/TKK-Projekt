@@ -1,6 +1,6 @@
 package agh.edu.pl.core.model;
 
-public class JSONString implements JSONValue {
+public class ParsedString extends ParsedValue {
 
     private String value;
 
@@ -11,7 +11,7 @@ public class JSONString implements JSONValue {
     }
 
     @Override
-    public String printToXML() {
+    public String toXML() {
         return "\"" + value + "\"";
     }
 }

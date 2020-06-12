@@ -1,15 +1,15 @@
 package agh.edu.pl.core.model;
 
-public class JSONNumber implements JSONValue {
+public class ParsedNumber extends ParsedValue {
 
     private String value;
 
-    public JSONNumber(String value) {
+    public ParsedNumber(String value) {
         this.value = value;
     }
 
     @Override
-    public String printToXML() {
+    public String toXML() {
         return value;
     }
 }

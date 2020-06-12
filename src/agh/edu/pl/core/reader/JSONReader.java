@@ -13,7 +13,7 @@ public class JSONReader {
     private Stack<Character> buf = new Stack<>();
     private int pos = 0;
 
-    public JSONObject read(String json) throws Exception {
+    public ParsedObject read(String json) throws Exception {
         char[] charArr = json.toCharArray();
         int size = charArr.length;
 
@@ -24,14 +24,14 @@ public class JSONReader {
         return readObject();
     }
 
-    private JSONObject readObject() throws Exception {
+    private ParsedObject readObject() throws Exception {
         skipWhitespaces();
 
         ++pos;
         if( buf.pop() != '{' )
             throw new InvalidCharacterSequence( pos, "Object opening bracket expected.");
 
-        JSONObject obj = new JSONObject();
+        ParsedObject obj = new ParsedObject();
 
         while ( !buf.empty() ) {
             skipWhitespaces();
@@ -57,7 +57,7 @@ public class JSONReader {
 
             skipWhitespaces();
 
-            JSONValue value = readValue(key);
+            ParsedValue value = readValue(key);
 
             skipWhitespaces();
 
@@ -78,13 +78,13 @@ public class JSONReader {
         return obj;
     }
 
-    private JSONBoolean readBool() throws InvalidCharacterSequence {
+    private ParsedBoolean readBool() throws InvalidCharacterSequence {
         if (buf.peek() == 't' ) {
             readExactly("true".toCharArray());
-            return new JSONBoolean(true);
+            return new ParsedBoolean(true);
         } else {
             readExactly("false".toCharArray());
-            return new JSONBoolean(false);
+            return new ParsedBoolean(false);
         }
     }
 
@@ -92,7 +92,7 @@ public class JSONReader {
         readExactly("null".toCharArray());
     }
 
-    private JSONNumber readNumber() throws InvalidCharacterSequence {
+    private ParsedNumber readNumber() throws InvalidCharacterSequence {
         StringBuilder builder = new StringBuilder();
 
         if ( buf.peek() == '-') {
@@ -160,17 +160,17 @@ public class JSONReader {
             } while ( !in(END_CHARACTERS, buf.peek()) );
         }
 
-        return new JSONNumber(builder.toString());
+        return new ParsedNumber(builder.toString());
     }
 
-    private JSONValue readValue(String key) throws Exception {
+    private ParsedValue readValue(String key) throws Exception {
         skipWhitespaces();
 
-        JSONValue value;
+        ParsedValue value;
 
         switch ( buf.peek() ) {
             case '\"':
-                JSONString jStr = new JSONString();
+                ParsedString jStr = new ParsedString();
                 jStr.setValue(readString());
                 value = jStr;
                 break;
@@ -182,7 +182,7 @@ public class JSONReader {
                 break;
             case 'n':
                 readNull();
-                value = new JSONNull();
+                value = new ParsedNull();
                 break;
             case 't':
             case 'f':
@@ -199,15 +199,15 @@ public class JSONReader {
         return value;
     }
 
-    private JSONArray readArray(String key) throws Exception {
+    private ParsedArray readArray(String key) throws Exception {
 
         readExactly(new char[]{'['});
 
-        JSONArray array = new JSONArray();
+        ParsedArray array = new ParsedArray();
         array.setName(key);
 
         while ( buf.peek() != ']' ) {
-            JSONValue value = readValue(key);
+            ParsedValue value = readValue(key);
             array.addValue(value);
             skipWhitespaces();
             if ( buf.peek() != ',' )
