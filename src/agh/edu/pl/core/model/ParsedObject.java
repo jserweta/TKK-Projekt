@@ -21,14 +21,18 @@ public class ParsedObject extends ParsedValue {
         setNestLevel(this.getNestLevel());
 
         Iterator<String> keys = fields.keySet().iterator();
-
+        if (this.getNestLevel() == 0){
+            xmlString.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+            xmlString.append("<root>\n");
+        }
         while (keys.hasNext()) {
 
             String key = keys.next();
             ParsedValue value = fields.get(key);
+
             if (value instanceof ParsedObject) {
                 xmlString.append(getIntend());
-                xmlString.append("<" + key + ">");
+                xmlString.append("<" + key + ">\n");
                 xmlString.append(value.toXML());
                 xmlString.append(getIntend());
                 xmlString.append("</" + key + ">\n");
@@ -40,6 +44,9 @@ public class ParsedObject extends ParsedValue {
                 xmlString.append(value.toXML());
                 xmlString.append("</" + key + ">\n");
             }
+        }
+        if (this.getNestLevel() == 0){
+            xmlString.append("</root>\n");
         }
 
         return xmlString.toString();

@@ -4,22 +4,9 @@
     <list default="true" id="29ea620c-a388-4965-a539-4fbb3d58cfaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java" afterDir="false" />
     </list>
-    <list id="8b0ec795-0c7a-45d4-957c-5ae2c057c8ad" name="improve intends in xml" comment="">
-      <change afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONNull.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/model/JSONValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agh/edu/pl/core/reader/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/agh/edu/pl/core/reader/JSONReader.java" afterDir="false" />
-    </list>
+    <list id="8b0ec795-0c7a-45d4-957c-5ae2c057c8ad" name="improve intends in xml" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="83">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,20 +37,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/reader/JSONReader.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/example2.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="629">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/example3.json">
           <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedArray.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,17 +104,11 @@
       <list>
         <option value="$PROJECT_DIR$/res/example2.json" />
         <option value="$PROJECT_DIR$/src/agh/edu/pl/core/reader/JSONReader.java" />
+        <option value="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedValue.java" />
+        <option value="$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java" />
         <option value="$PROJECT_DIR$/src/agh/edu/pl/Main.java" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/agh/edu/pl/Main.java">
-      <ranges>
-        <range start1="14" end1="15" start2="14" end2="15" changelist="29ea620c-a388-4965-a539-4fbb3d58cfaa" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="8b0ec795-0c7a-45d4-957c-5ae2c057c8ad" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
@@ -171,7 +185,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591959579392" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591961280469" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/improve_intends_in_xml.patch" />
   </component>
   <component name="RunDashboard">
@@ -233,7 +247,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5006227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.498132" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,10 +341,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/example2.json">
+    <entry file="file://$PROJECT_DIR$/res/example3.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="36" selection-start-line="36" selection-end-line="37" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -343,18 +370,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="83">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/example3.json">
+    <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agh/edu/pl/core/model/ParsedArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/example2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
