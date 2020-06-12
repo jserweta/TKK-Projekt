@@ -11,4 +11,4 @@ Celem poniższego projektu jest zbudowanie biblioteki, która pozwala konwertowa
 ## Założenia
 * algorytm będzie przetwarzał wejście znak po znaku
 * w przypadku nieprawidłowego ciągu znaków na wejściu, zostaje  rzucony wyjątek z informacją w którym miejscu algorytm napotkał niespójność w formacie JSON
-* podczas parsowania zostanie zbudowany obiekt o strukturze drzewiastej z którego potem można będzie w prosty sposób stworzyć poprawnego XML
+* podczas parsowania zostanie zbudowany obiekt o strukturze drzewiastej, z którego w prosty sposób będzie można stworzyć poprawny plik XML
