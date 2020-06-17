@@ -12,3 +12,10 @@ Celem poniższego projektu jest zbudowanie biblioteki, która pozwala konwertowa
 * algorytm będzie przetwarzał wejście znak po znaku
 * w przypadku nieprawidłowego ciągu znaków na wejściu, zostaje  rzucony wyjątek z informacją w którym miejscu algorytm napotkał niespójność w formacie JSON
 * podczas parsowania zostanie zbudowany obiekt o strukturze drzewiastej, z którego w prosty sposób będzie można stworzyć poprawny plik XML
+
+## Źródła
+
+## Co zostało zrobione
+Projekt został wykonany w 100%. Program konwertuje pliki w formacie JSON do plików w formacie XML.
+
+## Teoria
