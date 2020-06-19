@@ -14,6 +14,7 @@ Celem poniższego projektu jest zbudowanie biblioteki, która pozwala konwertowa
 * podczas parsowania zostanie zbudowany obiekt o strukturze drzewiastej, z którego w prosty sposób będzie można stworzyć poprawny plik XML
 
 ## Źródła
+* https://www.json.org/json-en.html - kompendium wiedzy o formacie JSON
 * https://www.freeformatter.com/json-to-xml-converter.html - konwerter online używany do testowania 
 
 ## Co zostało zrobione
